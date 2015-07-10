@@ -1,2 +1,5 @@
 # python-latin1-to-utf8
-Convert erroneous Latin-1 characters to UTF-8 characters
+
+Convert erroneous Latin-1 characters to UTF-8 characters.
+
+[Here] (http://www.i18nqa.com/debug/utf8-debug.html) is a thorough description and explanation of the encoding problem.
