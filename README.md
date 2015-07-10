@@ -7,3 +7,6 @@ Convert erroneous Latin-1 characters to UTF-8 characters.
 ## Usage
 	$ python latin1-to-utf8.py AutomÃƒÂ¡tica
 	> Automática
+
+## Related Projects
+[python-ftfy](https://github.com/LuminosoInsight/python-ftfy/)
