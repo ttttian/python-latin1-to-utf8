@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# I use this scraper to get the CONV_DICT
+# The scraper to get the CONV_DICT
 
 from selenium import webdriver
 
@@ -27,8 +27,8 @@ expected.extend([e.text for e in driver.find_elements_by_xpath(xpath)])
 xpath = '//table[@id="dbg"]//td[@class="ch"][4]'
 actual.extend([e.text for e in driver.find_elements_by_xpath(xpath)])
 
-conv_list = sorted(filter(lambda x: len(x[0]) > 0 and len(x[1]) > 0
-    and actual.count(x[0]) == 1, zip(actual, expected)),
+conv_list = sorted(filter(lambda x: len(x[0]) > 0 and actual.count(x[0]) == 1,
+                   zip(actual, expected)),
     key=lambda x: len(x[0]), reverse=True)
 conv_pattern = '|'.join([x[0] for x in conv_list])
 
